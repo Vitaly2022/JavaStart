@@ -1,6 +1,4 @@
-package Task2;
-
-import static java.lang.System.*;
+package Task2_280622;
 
 public class Therapist {
 

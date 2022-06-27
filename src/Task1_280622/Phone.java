@@ -1,4 +1,4 @@
-package Task1;
+package Task1_280622;
 
 public class Phone {
     int number;
