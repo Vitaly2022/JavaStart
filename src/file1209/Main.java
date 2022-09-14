@@ -22,9 +22,7 @@ public class Main {
             while (sc.hasNextLine()) {
                 lines.add(sc.nextLine());
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
         Collections.sort(lines); //сортируем
 
         for (int i = 0; i < lines.size(); i++) { //выводим сортировку
@@ -48,7 +46,7 @@ public class Main {
         }
         System.out.println("People >30 = " + count);
 
-        File myObj = new File(p_file);
+    /*    File myObj = new File(p_file); //удаляем файл
         if (myObj.delete()) {
             System.out.println("Deleted the file: " + myObj.getName());
         } else
@@ -56,7 +54,7 @@ public class Main {
 
 
         try {
-            File myObj2 = new File(p_file);
+            File myObj2 = new File(p_file); //создаем новый файл
             if (myObj2.createNewFile()) {
                 System.out.println("File created: " + myObj2.getName());
             } else {
@@ -65,10 +63,10 @@ public class Main {
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
-        }
+        }  */
 
         try {
-            FileWriter myWriter = new FileWriter(p_file);
+            FileWriter myWriter = new FileWriter(p_file, false); //перезаписываем файл
             myWriter.write(String.valueOf(lines));
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
@@ -77,6 +75,8 @@ public class Main {
             e.printStackTrace();
         }
 
-
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
