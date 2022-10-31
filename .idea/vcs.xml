@@ -2,7 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/181022DZ/DZ_zayvka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Division/Division" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/m1/Maven1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/m1qsl/Maven_MySQL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tomC1/WebTomCat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/xxx/xxx" vcs="Git" />
   </component>
 </project>
